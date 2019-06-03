@@ -1,4 +1,5 @@
 import React from 'react';
+
 import CommentSection from '../CommentSection/CommentSection';
 import Post from '../Post/Post';
 import '../Post/Post.css'
@@ -9,13 +10,14 @@ const PostContainer = props => {
       {props.posts.map((post) => {
         return(
           <div>
-            <Post likes={post.likes} image={post.imageUrl} thumbnail={post.thumbnailUrl} username={post.username} />
-            <CommentSection comments={post.comments} key={post.timestamp} />
+            <Post likes={post.likes} image={post.imageUrl} thumbnail={post.thumbnailUrl} username={post.username} key={post.timestamp} />
+            <CommentSection comments={post.comments} key={post.imageUrl} />
           </div>
         );
       })}
     </div>
   );
 }
+
 
 export default PostContainer;

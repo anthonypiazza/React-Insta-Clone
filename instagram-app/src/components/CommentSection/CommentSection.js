@@ -5,7 +5,7 @@ import './Comment.css';
 const CommentSection = props => {
   return (
     <div className="comment-section">
-      {props.comments.map(comment => <Comment comment={comment} />)}
+      {props.comments.map(comment => <Comment comment={comment} key={comment.text}/>)}
       <input
         className="add-comment"
         type="text"
