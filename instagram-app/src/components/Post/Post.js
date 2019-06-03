@@ -17,6 +17,10 @@ const Post = props => {
     </div>
   );
 }
+Post.defaultProps = {
+  likes: 0
+}
+
 Post.propTypes= {
   username: PropTypes.string,
   thumbnail: PropTypes.string,
