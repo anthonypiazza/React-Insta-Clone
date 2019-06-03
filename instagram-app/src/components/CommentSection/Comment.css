@@ -1,0 +1,36 @@
+.comment-box{
+    display: flex;
+    align-items: baseline;
+    margin-left: 10px;
+    margin-bottom: -20px;
+}
+
+.comment-box > h2 {
+    font-weight: bold;
+    font-size: .9rem;
+    margin-right: 1%;
+}
+
+.comment-box > p{
+    font-size: .8rem;
+}
+
+.comment-section{
+    width: 638px;
+    margin-left: 10%;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    margin-bottom: 50px;
+}
+
+.add-comment{
+    margin-top: 20px;
+    border: none;
+    display: flex;
+    margin-left: 10px;
+    padding: 20px 0%;
+    border-top: 1px solid #e6e6e6;
+    width: 600px;
+    font-weight: bold;
+}

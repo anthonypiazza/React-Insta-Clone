@@ -3,9 +3,9 @@ import React from 'react';
 
 const Comment = props => {
   return (
-    <div>
-        {props.comment.username}
-        {props.comment.text}
+    <div className="comment-box">
+        <h2>{props.comment.username}</h2>
+        <p>{props.comment.text}</p>
     </div>
   );
 }
