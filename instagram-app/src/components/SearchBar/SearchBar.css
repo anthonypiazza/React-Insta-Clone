@@ -1,6 +1,7 @@
 .search{
     display: flex;
     margin-left: 10%;
+    width: 638px;
 }
 
 .search > input{
@@ -13,4 +14,8 @@
     text-align: center;
     color: grey;
     font-size: .65rem;
+}
+.search > i{
+    margin: 20px 3px;
+    vertical-align: center;
 }

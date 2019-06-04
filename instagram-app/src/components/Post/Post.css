@@ -40,3 +40,13 @@
     border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
 }
+.icons{
+    width: 638px;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    margin-top: -4px;
+    display: flex;
+}
+.icons > i {
+    margin-right: 10px;
+}

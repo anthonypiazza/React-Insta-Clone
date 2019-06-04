@@ -9,6 +9,9 @@ function SearchBar() {
         type="text"
         placeholder="Search"
       />
+      <i className="far fa-compass"></i>
+      <i className="far fa-heart"></i>
+      <i className="fas fa-user-alt"></i>
     </div>
   );
 }

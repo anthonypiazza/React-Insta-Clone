@@ -11,7 +11,7 @@ const PostContainer = props => {
         return(
           <div>
             <Post likes={post.likes} image={post.imageUrl} thumbnail={post.thumbnailUrl} username={post.username} key={post.timestamp} />
-            <CommentSection comments={post.comments} key={post.imageUrl} />
+            <CommentSection comments={post.comments} key={post.id} />
           </div>
         );
       })}
