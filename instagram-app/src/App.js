@@ -11,6 +11,7 @@ class App extends React.Component {
     super();
     this.state = {
       posts: [],
+      filteredPosts: []
     };
   }
   componentDidMount(){
@@ -19,11 +20,34 @@ class App extends React.Component {
     })
   };
 
+  filterSearch = (e) => {
+    e.preventDefault();
+    const filtered = this.state.posts.filter(post => {
+      if (post.username.includes(e.target.value)) {
+        return post;
+      }
+    });
+    this.setState({ filteredPosts: filtered });
+  };
+
+  typeChanges = (e) => {
+    e.preventDefault();
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
   render(){
     return (
       <div className="App">
-        <SearchBar />
-        <PostContainer posts={this.state.posts}/>
+        <SearchBar typeChanges={this.typeChanges} filterSearch={this.filterSearch} />
+        <PostContainer 
+          posts={
+            this.state.filteredPosts.length > 0
+              ? this.state.filteredPosts
+              : this.state.posts
+          }
+        />
       </div>
     );
   }

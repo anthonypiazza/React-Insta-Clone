@@ -12,16 +12,7 @@ class CommentSection extends React.Component{
       username: "Guest"
     }
   }
-  // handleChanges = event => {
-  //   this.setState({
-  //     newComments: [
-  //       {
-  //         ...this.state.newComments,
-  //         [event.target.name]: event.target.value
-  //       }
-  //     ]
-  //   })
-  // }
+
   handleChanges = (e) => {
     e.preventDefault();
     this.setState({
