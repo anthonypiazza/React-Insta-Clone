@@ -4,13 +4,14 @@ import React from 'react';
 const SearchBar = props => {
   return (
     <div className="search">
-      <h1>Instagram </h1>  
-        <input 
-          onChange={props.filterSearch}
-          type="text"
-          placeholder="Search"
-          name="search"
-        /> 
+      <i class="fab fa-instagram"></i>
+      <h1>Instagram </h1> 
+      <input 
+        onChange={props.filterSearch}
+        type="text"
+        placeholder="	&#128269; Search"
+        name="search"
+      /> 
       <i className="far fa-compass"></i>
       <i className="far fa-heart"></i>
       <i className="fas fa-user-alt"></i>
