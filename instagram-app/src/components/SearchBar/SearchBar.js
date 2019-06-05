@@ -4,7 +4,7 @@ import React from 'react';
 const SearchBar = props => {
   return (
     <div className="search">
-      <i class="fab fa-instagram"></i>
+      <i className="fab fa-instagram"></i>
       <h1>Instagram </h1> 
       <input 
         onChange={props.filterSearch}
