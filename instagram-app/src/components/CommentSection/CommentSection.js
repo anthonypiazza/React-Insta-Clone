@@ -1,8 +1,31 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import Comment from './Comment';
+
 import './Comment.css';
 
-// const CommentSection = props => {
+const CommentBox = styled.div`
+  width: 638px;
+  margin-left: 10%;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  margin-bottom: 50px;
+`;
+
+const AddComment = styled.input`
+  margin-top: 20px;
+  border: none;
+  display: flex;
+  margin-left: 10px;
+  padding: 20px 0%;
+  border-top: 1px solid #e6e6e6;
+  width: 600px;
+  font-weight: bold;
+`;
+
+
 class CommentSection extends React.Component{
   constructor(props){
     super(props);
@@ -35,11 +58,10 @@ class CommentSection extends React.Component{
 
   render(){
     return (
-      <div className="comment-section">
+      <CommentBox>
         {this.state.comments.map(comment => <Comment comment={comment} key={comment.id}/>)}
         <form onSubmit={this.addNewComment}>
-          <input
-            className="add-comment"
+          <AddComment
             type="text"
             placeholder="Add a comment..."
             name="commentText"
@@ -47,7 +69,7 @@ class CommentSection extends React.Component{
             value={this.state.commentText}
           />
         </form>
-      </div>
+      </CommentBox>
     );
   }
 }

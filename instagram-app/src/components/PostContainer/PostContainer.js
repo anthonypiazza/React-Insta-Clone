@@ -6,7 +6,7 @@ import '../Post/Post.css'
 
 const PostContainer = props => {
   return (
-    <div className="post-container">
+    <div>
       {props.posts.map((post) => {
         return(
           <div>
